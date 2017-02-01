@@ -5,6 +5,8 @@
  */
 package boletin17;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author ggarciamartinez
@@ -54,8 +56,38 @@ public class EjDos {
             }
           System.out.println("La nota mas alta es: "+(nAlta));
     }
+    // ejercicio 3
     
+    public void PedirNota(){
+        int pos = Integer.parseInt(JOptionPane.showInputDialog("Introduce la posicion del alumno:"));
+        for(int i=0;i<alumnos.length;i++){
+            if(alumnos[i]==pos){
+                System.out.println("el alumno "+pos+" tiene la nota: "+(alumnos[i]));
+                break;
+            }
+        }
+        
+    }
     
+    public void SoloAprobados(){
+         for(int i =0;i<30;i++){
+            if( alumnos[i]>=5){
+                System.out.println(alumnos[i]);
+            }
+        }
+        
+    }
+    
+    public void OrdenarAlumnos(){
+        int aux;
+        for (int i = 1; i<alumnos.length; i++) {
+            for (int j = 1; j<alumnos.length; j++) {
+                aux = alumnos[i];
+                alumnos[i] = alumnos[j];
+                alumnos[j] = aux;
+            }
+        }
+    }
 }
 
 
