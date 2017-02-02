@@ -5,6 +5,7 @@
  */
 package boletin17;
 
+import java.util.Arrays;
 import javax.swing.JOptionPane;
 
 /**
@@ -79,14 +80,7 @@ public class EjDos {
     }
     
     public void OrdenarAlumnos(){
-        int aux;
-        for (int i = 1; i<alumnos.length; i++) {
-            for (int j = 1; j<alumnos.length; j++) {
-                aux = alumnos[i];
-                alumnos[i] = alumnos[j];
-                alumnos[j] = aux;
-            }
-        }
+        Arrays.sort(alumnos);
     }
 }
 

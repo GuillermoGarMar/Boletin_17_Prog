@@ -19,14 +19,18 @@ public class Boletin_Prog_17 {
         /*EjUno arra = new EjUno();
         arra.init();
         arra.visual();
-        arra.verAlReves();*/
+        arra.verAlReves();
         
         EjDos arra2 = new EjDos();
         arra2.IntroNotas();
         arra2.visual2();
         arra2.VerAoS();
         arra2.Media();
-        arra2.NotaMasAlt();
+        arra2.NotaMasAlt();*/
+        EjCuatro aa = new EjCuatro();
+        aa.calcLetraDNI();
+        
+                
     }
     
 }
