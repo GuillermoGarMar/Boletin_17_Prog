@@ -14,27 +14,15 @@ import javax.swing.JOptionPane;
  */
 public class EjCuatro {
     private int NDNI;
-    //private String [][] tablaLet = new String[23][2];
+    private String [] tablaLet = {"T","R","W","A","G","M","Y","F","P","D","X","B","N","J","Z","S","Q","V","H","L","C","K","E"};
      
 
  
     
     public void calcLetraDNI(){
-        String[][]  tablaLet = {{"A","3"},{"B","11"},{"C","11"},{"D","9"},{"E","22"},{"F","7"},{"G","4"},{"H","18"},{"J","13"},
-     {"K","21"},{"L","19"},{"M","5"},{"N","12"},{"P","8"},{"Q","16"},{"R","1"},{"S","15"},{"T","0"},{"V","17"},{"W","2"},{"Y","6"},{"Z","14"}};
-        String n;
+        Integer n;
         NDNI=Integer.parseInt(JOptionPane.showInputDialog("Introduce os numeros do dni"));
-        n= String.valueOf(NDNI%23);
-        for(int i=0;i<tablaLet.length;i++){
-            for(int j=0;j<tablaLet[0].length;i++){
-                String l = tablaLet[i][j];
-                String[][]  tablaAux={{l,n}};
-                if(Arrays){
-                    
-                }else{
-                
-                }
-            }
-        }
+        n= NDNI%23;
+        System.out.println(NDNI+tablaLet[n]);
     }
 }
